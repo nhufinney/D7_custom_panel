@@ -1,0 +1,4 @@
+name = Bass Panel Panes
+description = Create custom ads panel in BassMaster pages.
+core = 7.x
+dependencies[] = ctools
