@@ -68,20 +68,6 @@ function bass_panel_pane_custom_pane_render($subtype, $conf, $args, $contexts) {
 
   $content = "<div class = 'ad_panel' data-dimension= '" . $conf['dimensions'] .  "'></div>";
   drupal_add_js(drupal_get_path('module', 'bass_panel').'/js/bass_panel.js');
-  //drupal_add_js(array('bass_panel' => array('dimensions' => $conf['dimensions'])), 'setting');
-  //drupal_add_js(array('bass_panel' => array('content' => $content)), 'setting');
-
-//  $dimensions = $conf['dimensions'];
-//  foreach ($dimensions as $dimension){
-//    $block->title = t('This is the panel you choose! '.$dimension); // This will be overridden by the user within the panel options.
-//    echo ("test");
-//    //$content = "<div class = 'ad_panel' data-dimension= '" . $conf['dimensions'] .  "'></div>";
-//    //drupal_add_js(drupal_get_path('module', 'bass_panel').'/js/bass_panel.js');
-//   // drupal_add_js(array('bass_panel' => array('dimension' => $conf['dimension'])), 'setting');
-//    //drupal_add_js(array('bass_panel' => array('content' => $content)), 'setting');
-
-  //}
-
   $block->content = $content;
 
   return $block;
